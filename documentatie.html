@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Documentatie</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #f44336;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #f44336}
+
+.button:active {
+  background-color: #f44336;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+div {
+    width: 1200px;
+    padding: 15px;
+    border: 25px groove;
+    margin: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+}
+body {
+    background-color: whitesmoke;
+}
+table {
+    text-align:center;
+    margin: auto;
+    border: solid 3px;
+    border-color: black;
+}
+th {
+    background-color: #f44336;
+    color: black;
+    border: 3px;
+}
+td{
+    border: solid 1px;
+    border-color: black;
+    width: 200px;
+}
+</style>     
+    </head>
+    <body>
+        <div>
+            <b><p>Documentatie</p></b>
+            <p style="text-align: justify; font-size: 18px">
+            Pagina principala, numita "index.html" are rolul de a fi meniul aplicatiei, din care se poate naviga mai usor,
+            aceasta duce la cerintele aplicatiei.
+            <br>Ca sa ajungi dintr-o destinatie in alta, s-au folosit butoane care ajuta comunicarea dintre paginile html si php,
+            fiind realizate cu ajutorul CSS-ului (Cascading Style Sheet). 
+            <br> De ce am folosit CSS?
+            <br> Deoarece este mai usor sa modific intr-o singura parte design-ul pentru toata pagina, acest lucru fiind in atributul style.
+            Astfel, daca doream sa modific toate butoanele din culoarea rosie in verde, era de ajuns sa modific intr-un singur loc, nu in toate
+            butoane.
+            <br> De ce am folosit PHP?
+            <br> Pentru a face legatura dintre baza de date online, in phpmyadmin si site-ul web. Este foarte usor de folosit, fiind simplu
+            si poate fi folosit in combinatie cu html.
+            <br> De ce HTML?
+            <br> HTML-ul este gasit in majoritatea aplicatilor web din ziua de azi, fiind folosit inca de la inceputurile internetului.
+            Este usor de folosit, prin headere cum ar fi < html > < / html>, < br>(rand nou) etc. In combinatie cu CSS-ul se pot face site-uri simple
+            si dragute.
+            <br>Acest site a fost realizat cu ajutorul:
+            <br>-<b>phpmyadmin</b> = unde am introdus codul mysql si am facut o baza de date locala, avand localhost-ul cu portul 7777, dar am verificat si interogarile daca functioneaza
+            <br>-<b>xampp</b> = datorita careia am putut face localhost-ul
+            <br>-<b>w3schools</b> = de un am luat codurile PHP si CSS pentru interogari, respectiv design, avand tutoriale pe acest subiect
+            <br>-<b>youtube</b> = pentru a afla cum se face o conectare intre phpmyadmin si aplicatia web
+            <br>-<b>stackflow</b> = pentru erorile intampinate in cod
+            <br>
+            </p>
+            <a href="index.html" class="button" style="text-align: center">Inapoi</a>
+        </div>
+    </body>
+</html>
