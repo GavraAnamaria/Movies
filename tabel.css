@@ -1,0 +1,29 @@
+body{
+  background-image: url(poze/bg17.jpg);
+  height:97%;
+  background-position: center;
+  background-size: cover;
+	color: lavender;
+	font:150% Bodoni MT Black ;
+}
+table {	 border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: 80%;
+  color:black;
+  font-weight: bold;
+  text-align:center;
+   border: 1px solid black;
+}
+th,td{  border: 2px solid black;
+	padding:0.5%;
+}
+th {
+  background-color: SlateBlue;
+  color: white;
+}
+
+tr:nth-child(even){background-color: AliceBlue;}
+tr:nth-child(odd){background-color: Lavender;}
+tr:hover {background-color: Azure;}

@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>DISTRIBUTIE</title>
+<style>
+body{ padding-left:40%;
+      background-image: url(poze/bg17.jpg);
+  height:90%;
+  background-position: center;
+  background-size: cover;
+	color: lavender;
+	font:300% Bodoni MT Black;
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+input{	font:70% Bodoni MT Black;
+color: lavender;
+background-color:black;}
+
+td input{
+height:200%;
+font:200% Bodoni MT Black;}
+</style>
+</head>
+<body>
+<h2><u><center>Cautare film</center></u></h2>
+<form action="distributie.php" method=post>
+<p>Introduceti titlul filmului:</p>
+<table border=5>
+<tr ><td align="center"><input type="text" name="titlu" size="30" maxlength="30"></td>
+</tr>
+</table><br>
+<p>Introduceti anul in care a fost produs filmul:</p>
+<table border=5>
+<tr ><td align="center"><input type="text" name="an" size="30" maxlength="30"></td>
+</tr></table>
+<br>
+<center><input type=submit value="CAUTARE"></center>
+
+</form>
+</body>
+</html>

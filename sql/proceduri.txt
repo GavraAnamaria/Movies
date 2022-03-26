@@ -1,0 +1,45 @@
+DELIMITER //
+CREATE PROCEDURE PersCastigMare()
+BEGIN
+SELECT * from persoana
+   WHERE  (moneda = 'RON' AND castig_net*0.25 > 1000000) OR
+          (moneda = 'EUR' AND castig_net*1.21 > 1000000) OR
+          (moneda = 'USD' AND castig_net > 1000000)
+   ORDER BY moneda;
+    END//
+
+
+DELIMITER //
+CREATE PROCEDURE 4a()
+BEGIN
+SELECT   ID_PERSOANA,  NUME,  p.ADRESA as adr_pers,  SEX,  DATA_NASTERII,  CASTIG_NET,  MONEDA,  s.NUME AS studio,  s.ADRESA AS adr_st,  ID_PRESEDINTE
+   FROM persoana p JOIN film f ON p.id_persoana = f.id_producator JOIN studio s ON f.studio = s.nume
+   WHERE f.titlu = 'Barry' AND f.an = 2018;
+    END//
+
+
+DELIMITER //
+CREATE PROCEDURE 4b()
+BEGIN
+SELECT m.NUME as nume1, f.NUME as nume2, dm.titlu_film as film
+   FROM persoana m JOIN distributie dm ON dm.id_actor = m.id_persoana JOIN distributie df ON dm.titlu_film=df.titlu_film JOIN persoana f ON df.id_actor = f.id_persoana
+   WHERE df.titlu_film = dm.titlu_film and f.sex = 'F' and m.sex='M';
+    END//
+
+
+DELIMITER //
+CREATE PROCEDURE 5a()
+BEGIN
+SELECT  id_producator, COUNT(titlu) as nr
+   FROM film
+   where gen='SF'
+   GROUP BY id_producator;
+end//
+
+
+DELIMITER //
+CREATE PROCEDURE 6b()
+BEGIN
+SELECT min(p.castig_net) as "Castig Minim",max(castig_net) as "Castig Maxim"
+   FROM studio s JOIN persoana p  ON s.id_presedinte = p.id_persoana;
+end//
